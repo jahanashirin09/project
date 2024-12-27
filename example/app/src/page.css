@@ -1,0 +1,45 @@
+
+body {
+  background-color: rgb(20, 20, 20);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image[data-status="inactive"] {
+  display: none;
+}
+
+.image[data-status="active"] {
+  display: block;
+}
+.image_trail_text_container {
+  width: 25rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_trail_text {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  mix-blend-mode: difference;
+  z-index: 10000;
+}
+

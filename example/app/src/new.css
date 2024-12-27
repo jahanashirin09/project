@@ -1,0 +1,20 @@
+.trail-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.trail-image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.8s ease-out;
+}
+
+.trail-image-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
